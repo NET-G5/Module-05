@@ -6,7 +6,7 @@
         mc:Ignorable="d"
         Title="Learning Management System" Height="550" Width="1200" WindowStartupLocation="CenterScreen">
     <StackPanel>
-        <Button Width="250" Height="75" Content="Stackpanel" Click="Button_Click" />
-        <Button Width="250" Height="75" Content="Grid" Click="Button_Click_1" />
+        <Button Width="250" Height="50" Content="Stackpanel" Click="Button_Click" />
+        <Button Width="250" Height="50" Content="Grid" Click="Button_Click_1" />
     </StackPanel>
 </Window>
