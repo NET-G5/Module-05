@@ -10,7 +10,6 @@ namespace LMS
         public MainWindow()
         {
             InitializeComponent();
-            //Ro'zimuhammad's change
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
