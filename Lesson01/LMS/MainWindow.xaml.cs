@@ -11,8 +11,8 @@ namespace LMS
         {
             InitializeComponent();
 
-            string a = "hello";
-            int num = 3;
+            string text = "hello World!";
+            int number = 12;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
