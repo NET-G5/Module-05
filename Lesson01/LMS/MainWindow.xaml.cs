@@ -25,5 +25,6 @@ namespace LMS
 
             window.Show();
         }
+        string a = "Hi everyone";
     }
 }
