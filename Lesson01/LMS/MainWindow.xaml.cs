@@ -24,7 +24,7 @@ namespace LMS
         {
             InitializeComponent();
 
-            char c = 'a ';
+            char c = 'a';
 
             string a = "hello";
         }
