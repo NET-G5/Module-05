@@ -23,6 +23,7 @@ namespace LMS
         public MainWindow()
         {
             InitializeComponent();
+// comment
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
