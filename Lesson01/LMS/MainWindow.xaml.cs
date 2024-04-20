@@ -21,6 +21,7 @@ namespace LMS
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+        //nimadir Qildi
             var window = new GridWindow();
 
             window.Show();
