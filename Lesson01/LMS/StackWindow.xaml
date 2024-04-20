@@ -27,6 +27,9 @@
                 <Button Width="50" Content="B6"/>
                 <Button Width="50" Content="B7"/>
             </StackPanel>
+            <StackPanel >
+                <Button Content="any button" Height="40" Width="100" Background="BlueViolet"/>
+            </StackPanel>
         </Grid>
     </StackPanel>
 </Window>
