@@ -1,0 +1,25 @@
+﻿<Window x:Class="LMS.InputWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LMS"
+        mc:Ignorable="d"
+        Title="InputWindows" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Hello"/>
+        <TextBox Width="250"
+                 Text="First name"
+                 Height="30"
+                 FontSize="17"
+                 TextAlignment="Left"
+                 VerticalContentAlignment="Center"/>
+        <TextBox Width="250"
+                 Text="Last name"
+                 Margin="0,25,0,0"
+                 FontSize="17"
+                 Height="30"
+                 VerticalContentAlignment="Center"/>
+        <TextBox Width="250" Text="Phone number" Margin="0,25,0,0"/>
+    </StackPanel>
+</Window>
