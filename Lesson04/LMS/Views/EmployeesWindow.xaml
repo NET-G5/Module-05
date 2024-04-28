@@ -1,0 +1,29 @@
+﻿<Window x:Class="LMS.Views.EmployeesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LMS.Views"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Employees" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,50,25">
+            <StackPanel Orientation="Horizontal">
+                <Button Margin="0,0,15,0" Background="LightSeaGreen" Content="Add +" Click="AddEmployee_Clicked" BorderBrush="LightBlue" Width="100" Height="30" Foreground="White" />
+                <Button Background="PaleVioletRed" Content="Delete" Click="DeleteEmployee_Clicked" BorderBrush="LightBlue" Width="100" Height="30" Foreground="White" />
+            </StackPanel>
+        </StackPanel>
+        <DataGrid Grid.Row="1"
+                  HorizontalAlignment="Center"
+                  MouseDoubleClick="EmployeesDataGrid_MouseDoubleClick"
+                  VerticalAlignment="Center"
+                  x:Name="EmployeesDataGrid"
+                  Margin="25"/>
+    </Grid>
+</Window>
