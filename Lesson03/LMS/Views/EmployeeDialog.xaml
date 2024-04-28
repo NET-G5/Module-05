@@ -1,0 +1,50 @@
+﻿<Window x:Class="LMS.Views.AddEmployeeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LMS.Views"
+        mc:Ignorable="d"
+        WindowStyle="SingleBorderWindow"
+        Title="Add Employee" Height="450" Width="650">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Row="0" HorizontalAlignment="Right" Margin="50,25,0,0">
+            <TextBlock Text="Employee number: " FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="First name: " Margin="0,17,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Job: " Margin="0,15,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Manager: " Margin="0,16,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Hiredate: " Margin="0,17,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Salary: " Margin="0,16,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Commission: " Margin="0,18,0,0" FontSize="18" HorizontalAlignment="Right"/>
+            <TextBlock Text="Department: " Margin="0,15,0,0" FontSize="18" HorizontalAlignment="Right"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="0,25,0,0">
+            <TextBox x:Name="empnoInput" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,0,0,0"/>
+            <TextBox x:Name="enameInput" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <TextBox x:Name="jobInput" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <ComboBox x:Name="managersCombobox" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <DatePicker x:Name="hiredateInput" FontSize="15" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <TextBox x:Name="salInput" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <TextBox x:Name="commInput" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0"/>
+            <ComboBox x:Name="departmentsCombobox" Width="250" Height="25" HorizontalAlignment="Left" Margin="5,15,0,0" />
+        </StackPanel>
+
+        <Button Grid.ColumnSpan="2"
+                Width="150"
+                Background="LightSeaGreen"
+                Foreground="White"
+                Margin="0,0,0,25"
+                HorizontalAlignment="Center"
+                Content="Save"
+                Height="30"
+                VerticalAlignment="Bottom"
+                BorderBrush="LightBlue"
+                Click="Save_Click"/>
+
+    </Grid>
+</Window>
