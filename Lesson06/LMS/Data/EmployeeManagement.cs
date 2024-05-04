@@ -1,9 +1,5 @@
-﻿using LMS.Migrations;
-using LMS.Models;
-using Microsoft.EntityFrameworkCore;
-using System;
+﻿using LMS.Models;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 
 namespace LMS.Data;
@@ -17,11 +13,11 @@ class EmployeeManagement
         _context = new EmployeeManagementDbContext();
     }
 
-    public List<Employee> GetEmployees() => new List<Employee>();
+    public List<Employee> GetEmployees() => _context.Employees.ToList();
 
     public bool CreateEmployee(Employee employee)
     {
-        _context.Employees.Add(employee);
+        _context.Entry(employee).State = Microsoft.EntityFrameworkCore.EntityState.Added;
         int affectedRows = _context.SaveChanges();
 
         return affectedRows > 0;
@@ -29,7 +25,17 @@ class EmployeeManagement
 
     public bool UpdateEmployee(Employee employee)
     {
+        _context.ChangeTracker.Clear();
+
         _context.Employees.Update(employee);
+
+        //var employeeToUpdate = _context.Employees.FirstOrDefault(x => x.Number == employee.Number);
+
+        //if (employeeToUpdate != null)
+        //{
+        //    _context.Entry(employeeToUpdate).CurrentValues.SetValues(employee);
+        //}
+
         int affectedRows = _context.SaveChanges();
 
         return affectedRows > 0;
