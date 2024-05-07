@@ -1,4 +1,6 @@
-﻿namespace LMS.Models;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace LMS.Models;
 
 public class Street
 {
@@ -7,6 +9,6 @@ public class Street
     public string Address { get; set; }
     public string Description { get; set; }
 
-    public City City { get; set; }
+    public virtual City City { get; set; }
     public int CityId { get; set; }
 }
