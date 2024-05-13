@@ -10,6 +10,17 @@ namespace LMS
         public MainWindow()
         {
             InitializeComponent();
+
+
+            string a = "hello";
+            int num = 3;
+            
+
+            string fsd= "dfsd";
+            
+         
+
+ 
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
